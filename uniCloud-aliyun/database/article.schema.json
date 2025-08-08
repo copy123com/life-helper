@@ -1,0 +1,20 @@
+{
+  "bsonType": "object",
+  "required": ["title", "vendor", "content", "status"],
+  "properties": {
+    "title": { "bsonType": "string", "description": "标题" },
+    "desc": { "bsonType": "string", "description": "描述" },
+    "img": { "bsonType": "string", "description": "图片fileID" },
+    "vendor": { "bsonType": "string", "enum": ["移动", "联通", "电信"], "description": "厂商" },
+    "content": { "bsonType": "string", "description": "文章内容" },
+    "status": { "bsonType": "string", "enum": ["pending", "approved", "rejected"], "description": "文章状态" },
+    "created_at": { "bsonType": "number", "description": "创建时间戳" },
+    "updated_at": { "bsonType": "number", "description": "更新时间戳" }
+  },
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": false,
+    "delete": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "bsonType": "object",
+  "required": ["user_id", "cardNo", "vendor", "status", "date"],
+  "properties": {
+    "user_id": { "bsonType": "string", "description": "用户ID" },
+    "cardNo": { "bsonType": "string", "description": "卡号" },
+    "vendor": { "bsonType": "string", "description": "厂商" },
+    "status": { "bsonType": "string", "description": "状态" },
+    "date": { "bsonType": "string", "description": "办理时间" },
+    "created_at": { "bsonType": "number", "description": "创建时间戳" }
+  },
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": false,
+    "delete": false
+  }
+}

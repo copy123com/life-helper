@@ -1,0 +1,14 @@
+{
+  "bsonType": "object",
+  "required": ["name"],
+  "properties": {
+    "name": { "bsonType": "string", "description": "城市名" },
+    "pinyin": { "bsonType": "string", "description": "拼音" }
+  },
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": false,
+    "delete": false
+  }
+}

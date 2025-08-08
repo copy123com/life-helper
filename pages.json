@@ -1,0 +1,42 @@
+{
+	"easycom": {
+			"autoscan": true,
+			"custom": {
+				// uni-ui 规则如下配置
+				"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+			}
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": { "navigationBarTitleText": "首页" }
+		},
+		{ "path": "pages/order/index", "style": { "navigationBarTitleText": "订单" } },
+		{ "path": "pages/mine/index", "style": { "navigationBarTitleText": "我的" } },
+		{ "path": "pages/flowcard/index", "style": { "navigationBarTitleText": "流量卡" } },
+		{ "path": "pages/flowcard/detail", "style": { "navigationBarTitleText": "详情" } },
+		{ "path": "pages/flowcard/orderform", "style": { "navigationBarTitleText": "订单表单" } },
+		{ "path": "pages/mine/publish", "style": { "navigationBarTitleText": "发布" } },
+		{ "path": "pages/auth/login", "style": { "navigationBarTitleText": "登录" } },
+		{ "path": "pages/mine/review", "style": { "navigationBarTitleText": "文章审核" } },
+		{ "path": "pages/mine/settings", "style": { "navigationBarTitleText": "设置" } }
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{ "pagePath": "pages/index/index", "iconPath": "static/tabbar_home.png", "selectedIconPath": "static/tabbar_home_selected.png", "text": "首页" },
+			{ "pagePath": "pages/order/index", "iconPath": "static/tabbar_order.png", "selectedIconPath": "static/tabbar_order.png", "text": "订单" },
+			{ "pagePath": "pages/mine/index", "iconPath": "static/tabbar_mine.png", "selectedIconPath": "static/tabbar_mine_selected.png", "text": "我的" }
+		]
+	}
+}
